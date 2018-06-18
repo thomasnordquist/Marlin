@@ -448,7 +448,7 @@
 // This option prevents a single extrusion longer than EXTRUDE_MAXLENGTH.
 // Note that for Bowden Extruders a too-small value here may prevent loading.
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 200
+#define EXTRUDE_MAXLENGTH 500
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -576,7 +576,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 400, 400, 8, 400 }
+#define DEFAULT_MAX_FEEDRATE          { 400, 400, 8, 100 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -609,7 +609,7 @@
 #define DEFAULT_XJERK                 17.5
 #define DEFAULT_YJERK                 15.0
 #define DEFAULT_ZJERK                  0.3
-#define DEFAULT_EJERK                  4.0 // 5
+#define DEFAULT_EJERK                  3.0 // 5
 
 /**
  * S-Curve Acceleration

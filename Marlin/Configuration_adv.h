@@ -459,7 +459,7 @@
 //#define ADAPTIVE_STEP_SMOOTHING
 
 // Microstep setting (Only functional when stepper driver microstep pins are connected to MCU.
-#define MICROSTEP_MODES { 16, 16, 16, 16, 16 } // [1,2,4,8,16]
+#define MICROSTEP_MODES { 16, 16, 16, 4, 4 } // [1,2,4,8,16]
 
 /**
  *  @section  stepper motor current
@@ -1040,11 +1040,11 @@
 
   #define E0_MAX_CURRENT    1000
   #define E0_SENSE_RESISTOR   91
-  #define E0_MICROSTEPS       16
+  #define E0_MICROSTEPS       4
 
   #define E1_MAX_CURRENT    1000
   #define E1_SENSE_RESISTOR   91
-  #define E1_MICROSTEPS       16
+  #define E1_MICROSTEPS       4
 
   #define E2_MAX_CURRENT    1000
   #define E2_SENSE_RESISTOR   91
@@ -1137,10 +1137,10 @@
   #define Z2_CURRENT         800
   #define Z2_MICROSTEPS       16
 
-  #define E0_CURRENT         800
+  #define E0_CURRENT         1200
   #define E0_MICROSTEPS       16
 
-  #define E1_CURRENT         800
+  #define E1_CURRENT         1200
   #define E1_MICROSTEPS       16
 
   #define E2_CURRENT         800
@@ -1201,8 +1201,8 @@
   #define Y2_HYBRID_THRESHOLD    100
   #define Z_HYBRID_THRESHOLD       30
   #define Z2_HYBRID_THRESHOLD      3
-  #define E0_HYBRID_THRESHOLD     100
-  #define E1_HYBRID_THRESHOLD     30
+  #define E0_HYBRID_THRESHOLD     1
+  #define E1_HYBRID_THRESHOLD     1
   #define E2_HYBRID_THRESHOLD     30
   #define E3_HYBRID_THRESHOLD     30
   #define E4_HYBRID_THRESHOLD     30
